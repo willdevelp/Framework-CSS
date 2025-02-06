@@ -1,0 +1,71 @@
+/* Styles CSS personnalisés */
+
+    /* Appliquer la police Archivo Narrow à tout le texte */
+    .navbar {
+        background-color: #2C3E50; /* Couleur de fond de la barre de navigation */
+    }
+    .navbar-brand img {
+        width: 100px; /* Largeur du logo */
+        height: 100px; /* Hauteur du logo */
+    }
+    .navbar-nav .nav-link {
+        color: white !important; /* Couleur du texte du menu en blanc */
+    }
+    .bg-success {
+        background-color: #28a745 !important; /* Couleur de fond verte plus vive */
+    }
+    .connects {
+        margin-right: 10px; /* Espacement entre les boutons */
+    }
+    /* Style pour les écrans de petite taille */
+    @media (max-width: 767px) {
+        .navigationmobile {
+            flex-direction: column; /* Disposition verticale des boutons sur mobile */
+            align-items: center; /* Centrer les boutons horizontalement */
+        }
+        .connects, .inscrits {
+            margin: 9px 0; /* Espacement entre les boutons sur mobile */
+        }
+    }
+    .col-md-6.bg-success {
+        background-color: #008000 !important; /* Vert foncé */
+      }
+
+    .col-md-6.bg-success p {
+        color: white; /* Texte blanc */
+        body {
+            font-family: 'Archivo Narrow', sans-serif;
+          }
+      }
+
+      #titre{
+        padding-top: 120px;
+        text-shadow: 2px 4px 5px rgb(145, 141, 141);
+        font-family: Arial, sans-serif;
+    }
+
+      #titre {
+        margin-bottom: 30px; /* Espacement sous le titre */
+      }
+      .image-container img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .image-container:hover img {
+        transform: scale(1.1);
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 10px; /* Ajustez la valeur selon l'espace souhaité */
+        margin-right: 10px; /* Ajustez la valeur selon l'espace souhaité */
+      }
+      
+
+      .container2 {
+        font-family: Arial, sans-serif;
+        display: flex;
+        align-items: center;
+      }
