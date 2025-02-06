@@ -1,0 +1,315 @@
+
+.nav-link , .lien{
+    color: white;
+    text-decoration: none;
+}
+.nav-item :hover{
+    color: #5CA506;
+    text-decoration: underline;
+    scale: 1.2;
+}
+.ongletsfooter :hover{
+    color: #5CA506;
+    text-decoration: underline;
+    scale: 1.2;
+}
+.btn{
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+}
+.connects , .inscrit :hover{
+    background-color: #5CA506;
+    color: white;
+    border: #5CA506;
+}
+.connect :hover{
+    border: 1px solid #5CA506;
+    background-color: white;
+    color: #5CA506;
+}
+.acont :hover{
+    color: #5CA506;
+}
+.inscrits{
+    border: 1px solid #2C3E50;
+    background-color: white;
+    color: #2C3E50;
+    margin-left: 10px;
+}
+.onglet{
+    display: flex; 
+    justify-content: space-around;
+}
+ul li {
+    margin-left: 20px;
+}
+.video-background {
+    /* position: relative;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Couvre toute la fenêtre sans déformer */
+    z-index: -1; /* Place la vidéo derrière le contenu */
+}
+
+  /* Ajuster la position du contenu principal */
+  .contents {
+    margin-top: -25%;
+    /* z-index: 1; */
+    color: white;
+    text-align: center;
+    /* padding-top: 21%; */
+  }
+  .contents p{
+    font-size: 25px;
+  }
+  .contents h1{
+    font-size: 50px;
+  }
+  .header{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.navbar{
+    z-index: 2; /* Le header reste en haut de la page */
+}
+.titre{
+    /* max-width: 500px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.line{
+    height: 3px;
+    background-color: #5CA506;
+    max-width: 200px;
+    /* align-items: center; */
+}
+.titre h1{
+    font-size: 40px;
+    font-weight: bolder;
+    /* max-width: 500px; */
+    text-align: center;
+    background: linear-gradient( #5CA506, #407204, #233F02);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.colonne{
+    background-color: #fff;
+    border-radius: 20px;
+    height: auto;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 20px;
+    box-shadow: 5px 5px 5px #d9d9d9;
+}
+.colcontain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  
+}
+.colonne img{
+    width: 50px;
+    height: 50px;
+}
+.cols:hover{
+    transform: scale(1.1);
+}
+/* .carousel-item{
+    height: 50%;
+    width: 50%;
+} */
+.section1{
+    padding-top: 20%;
+}
+.carousel-indicators{
+    z-index: 1;
+}
+.section2 , .section3 , .section4 , .colonne2 , .colonne3{
+    margin-top: 5%;
+}
+.section2 , .section4{
+    background-color: #ECF0F1;
+    padding: 50px 0;
+}
+/* .carouselcontent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.carousel-item{
+    background: linear-gradient( 135deg,#2C3E50, #2B7B76, #407204 , #5CA506);
+} */
+footer{
+    color: #fff;
+    background-color: #2C3E50;
+}
+.contenu{
+    text-align: left;
+}
+.mentions{
+    margin-top: 3%;
+}
+/* .col{
+    background-color: #233F02;
+    border: 5px solid black;
+} */
+.colonne1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .carousel-item {
+    padding: 20px;
+} */
+.testimonial-card {
+    background: linear-gradient(135deg, #2C3E50, #2B7B76, #407204, #5CA506);
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.testimonial-card h5 {
+    color: black;
+}
+.stars {
+    color: gold;
+    font-size: 25px;
+}
+.boutonderoulant {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.services{
+    margin-top: 10%;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    background-color: #fff;
+    padding: 0 20px;
+}
+@media screen and (max-width: 991px) { /* S'applique aux écrans < 992px (tablettes et mobiles) */
+    .navbar-collapse {
+        background-color: #fff; /* Fond sombre pour le menu mobile */
+        padding: 10px;
+        border-radius: 8px;
+        /* width: 150px; */
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        color: black;
+        font-size: 18px;
+        padding: 10px;
+        /* width: 100%; */
+        text-align: center;
+    }
+    .foot .lien {
+        color: white;
+        font-size: 18px;
+        text-align: left;
+        /* padding: 10px; */
+        /* width: 100%; */
+        /* text-align: center; */
+    }
+
+    .navbar-nav .nav-link:hover {
+        background-color: #5CA506;
+        color: #fff;
+        border-radius: 5px;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+
+    /* Espacement et alignement des boutons */
+    .navbar-collapse .d-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .navbar-collapse .btn {
+        /* width: 100%; */
+        max-width: 150px;
+    }
+    .testimonial-card{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .testimonial-card p{
+        font-size: 12px;
+    }
+    .testimonial-card h5{
+        font-size: 15px;
+    }
+    .testimonial-card img{
+        width: 100px;
+        height: 100px;
+    }
+    /* .case{
+        width: 80%;
+    } */
+}
+@media screen and (max-width: 1028px){
+    .video-background {
+        height: 70%;
+    }
+    /* .content {
+        padding-top: 30%;
+    } */
+    /* .section1{
+        margin-top: 100%;
+    } */
+    footer {
+        color: #fff;
+    }
+}
+@media screen and (max-width: 600px){
+    /* .section1{
+        margin-top: 100px !important;
+    } */
+    /* .content {
+        padding-top: 50%;
+    } */
+    .contents p{
+        font-size: 15px;
+    }
+    .contents h1{
+        font-size: 25px;
+    }
+    .titre h1{
+        font-size: 25px;
+    }
+    .mention{
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+    }
+}
