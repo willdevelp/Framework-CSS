@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
+    <title>Site Web TailWind</title>  
+
+</head>
+<body>
+
+    <!-- Entête de page -->
+
+    <nav class="bg-slate-700 shadow-md fixed h-aut top-0 left-0 w-screen z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between items-center h-16">
+
+              <!-- Logo -->
+              <div><img src="image/green_logo.png" alt="" class="h-16"></div>
+
+              <!-- Menu (Desktop) -->
+              <div class="hidden md:flex space-x-10 relative lg:right-text-center items-center">
+                  <a href="#" class="text-white">Accueil</a>
+                  <a href="#" class="text-white">Services</a>
+                  <a href="#" class="text-white">À propos</a>
+                  <a href="#" class="text-white">Contact</a>
+              </div>
+              <div class="hidden md:block space-x-4">
+                <button class="bg-green-300 rounded-md p-1">Se connecter</button>
+                <button class="bg-white px-3 py-1 rounded-md">S'inscrire</button>
+              </div>
+              <!-- Bouton Burger (Mobile) -->
+              <button id="menu-toggle" class="md:hidden flex flex-col space-y-1 p-2">
+                  <span class="block w-6 h-0.5 bg-white transition-all"></span>
+                  <span class="block w-6 h-0.5 bg-white transition-all"></span>
+                  <span class="block w-6 h-0.5 bg-white transition-all"></span>
+              </button>
+          </div>
+      </div>
+
+      <!-- Menu Mobile (Caché par défaut) -->
+      <div id="mobile-menu" class="block md:hidden bg-white md:w-[]">
+          <a href="#" class="block py-2 px-4 text-slate-700 text-center">Accueil</a>
+          <a href="#" class="block py-2 px-4 text-slate-700 text-center">Services</a>
+          <a href="#" class="block py-2 px-4 text-slate-700 text-center">À propos</a>
+          <a href="#" class="block py-2 px-4 text-slate-700 text-center">Contact</a>
+          <div class="flex flex-col items-center justify-center gap-3">
+            <button class="bg-green-300 rounded-md p-1">Se connecter</button>
+            <button class="bg-white px-3 py-1 rounded-md">S'inscrire</button>
+          </div>
+      </div>
+      <div id="mobile-menu" class="hidden md:block space-x-4">
+
+      </div>
+  </nav>
+
+  <!-- Espacement pour éviter que le contenu soit caché par la navbar -->
+
+  <script>
+      const toggleButton = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      toggleButton.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+          toggleButton.classList.toggle('open');
+      });
+  </script>
+
+    <!--Corps de page-->
+    <div class="carousel w-screen mt-16">
+        <div class="carousel-item w-auto">
+          <img
+          src="image/12551916_5019347.jpg"
+            class="w-screen"
+            alt="Tailwind CSS Carousel component" />
+        </div>
+        <div class="carousel-item w-full">
+          <img
+            src="image/25811455_7096244.jpg"
+            class="w-full"
+            alt="Tailwind CSS Carousel component" />
+        </div>
+        <div class="carousel-item w-full">
+          <img
+            src="image/18892148_6022536.jpg"
+            class="w-full"
+            alt="Tailwind CSS Carousel component" />
+        </div>
+        <div class="carousel-item w-full">
+          <img
+            src="image/25811455_7096244.jpg"
+            class="w-full"
+            alt="Tailwind CSS Carousel component" />
+        </div>
+      </div>
+    <nav class="">
+
+        <!--les services proposées-->
+        <div class="">
+            <!--Premier service-->
+            <p class="sticky top-16 z-10 border border-gray-300 bg-green-300 w-1/3 text-center rounded-md p-1">Service de developpement Web</p>
+            <div class="sm:flex space-x-10 px-5 mt-8">
+               <div class="bg-white-300 p-10 font-medium rounded-md border border-gray-100 ">
+                <img src="image/wind_turbine_64px.png" alt="" class="bg-green-300 rounded-full z-0 relative left-1/3"><br>
+                <p>Conception des sites web eco-responsable</p><br>
+                <p class="text-sm">Conception de sites Web qui sont optimisés pour réduire la consommation d'énergie et les émissions de gaz à effet de serre.</p>
+               </div>
+               <div class="bg-white-300 p-10 font-medium rounded-md border border-gray-100">
+                <img src="image/wind_turbine_64px.png" alt="" class="bg-green-300 rounded-full z-0 relative left-1/3"><br>
+                <p>Reduction de la consommation d'énergie</p><br>
+                <p class="text-sm">Conception de sites Web qui sont optimisés pour réduire la consommation d'énergie et les émissions de gaz à effet de serre.</p>
+               </div>
+               <div class="bg-white-300 p-10 font-medium rounded-md border border-gray-100">
+                <img src="image/wind_turbine_64px.png" alt="" class="bg-green-300 rounded-full z-0 relative left-1/3"><br>
+                <p>Amélioration de la sécurité</p><br>
+                <p class="text-sm">Conception de sites Web qui sont optimisés pour réduire la consommation d'énergie et les émissions de gaz à effet de serre.</p>
+            </div>
+        </div>
+        <!-- deuxieme service-->
+        <p class="sticky top-16 z-10 border border-gray-300 bg-green-300 w-1/3 text-center rounded-md p-1 my-8">Service d'optimisation de la performance</p>
+        <div class="sm:flex space-x-10 px-5">
+               <div class="bg-white-300 p-10 font-medium rounded-md border border-gray-100">
+                <img src="image/wind_turbine_64px.png" alt="" class="bg-green-300 z-0 p-1 rounded-full relative left-1/3"><br>
+                <p>Optimisation de la vitesse de chargement<label className="cursor-pointer">
+                <p class="text-sm">Conception de sites Web qui sont optimisés pour réduire la consommation d'énergie et les émissions de gaz à effet de serre.</p>
+               </div>
+               <div class="bg-white-300 p-10 font-medium rounded-md border border-gray-100">
+                <img src="image/wind_turbine_64px.png" alt="" class="bg-green-300 rounded-full z-0 relative left-1/3"><br>
+                <p>Reduction de la consommation d'energie</p><br>
+                <p class="text-sm">Conception de sites Web qui sont optimisés pour réduire la consommation d'énergie et les émissions de gaz à effet de serre.</p>
+               </div>
+               <div class="bg-white-300 p-10 font-medium rounded-md border border-gray-100">
+                <img src="image/wind_turbine_64px.png" alt="" class="bg-green-300 rounded-full z-0 relative left-1/3"><br>
+                <p>Amelioration de la sécurité</p><br>
+                <p class="text-sm">Conception de sites Web qui sont optimisés pour réduire la consommation d'énergie et les émissions de gaz à effet de serre.</p>
+               </div>
+        </div>
+        <!--Troisieme service-->
+        <p class=" sticky top-16 z-10 border border-gray-300 bg-green-300 w-1/3 text-center rounded-md p-1 my-8">Service de conception UX durable</p>
+        <div class="sm:flex space-x-10 px-5">
+               <div class="bg-white-300 p-10 font-medium rounded-md border border-gray-100">
+                <img src="image/wind_turbine_64px.png" alt="" class="bg-green-300 rounded-full z-0 p-1 relative left-1/3"><br>
+                <p>Conception de l'experience utilisateur durable</p><br>
+                <p class="text-sm">Conception de sites Web qui sont optimisés pour réduire la consommation d'énergie et les émissions de gaz à effet de serre.</p>
+               </div>
+               <div class="bg-white-300 p-10 font-medium rounded-md border border-gray-100">
+                <img src="image/wind_turbine_64px.png" alt="" class="bg-green-300 rounded-full z-0 relative left-1/3"><br>
+                <p>Developpement de Wireframes et de prototypes</p><br>
+                <p class="text-sm">Conception de sites Web qui sont optimisés pour réduire la consommation d'énergie et les émissions de gaz à effet de serre.</p>
+               </div>
+               <div class="bg-white-300 p-10 font-medium rounded-md border border-gray-100">
+                <img src="image/wind_turbine_64px.png" alt="" class="bg-green-300 rounded-full z-0 relative left-1/3"><br>
+                <p>Test et évaluation de l'experience utilisateur</p><br>
+                <p class="text-sm">Conception de sites Web qui sont optimisés pour réduire la consommation d'énergie et les émissions de gaz à effet de serre.</p>
+               </div>
+        </div>
+        <!--dernier service-->
+        <p class="z-10 border border-gray-300 bg-green-300 w-1/3 text-center rounded-md p-1 space-y-8 relative md:absolute">Service de formation et de sensibilisation</p>
+        <div class="md:flex space-x-10 px-5">
+               <div class="bg-white-300 p-10 font-medium rounded-md border border-gray-100">
+                <img src="image/wind_turbine_64px.png" alt="" class="bg-green-300 rounded-full z-0 relative left-1/3"><br>
+                <p>Formation sur les technologies durablesen dev</p><br>
+                <p class="text-sm">Conception de sites Web qui sont optimisés pour réduire la consommation d'énergie et les émissions de gaz à effet de serre.</p>
+               </div>
+               <div class="bg-white-300 p-10 font-medium rounded-md border border-gray-100">
+                <img src="image/wind_turbine_64px.png" alt="" class="bg-green-300 rounded-full z-0 relative left-1/3"><br>
+                <p>sensibilisation à la durabilité en dev</p><br>
+                <p class="text-sm">Conception de sites Web qui sont optimisés pour réduire la consommation d'énergie et les émissions de gaz à effet de serre.</p>
+               </div>
+               <div class="bg-white-300 p-10 font-medium rounded-md border border-gray-100">
+                <img src="image/wind_turbine_64px.png" alt="" class="bg-green-300 rounded-full z-0 relative left-1/3"><br>
+                <p>Developpement de programme de formation</p><br>
+                <p class="text-sm">Conception de sites Web qui sont optimisés pour réduire la consommation d'énergie et les émissions de gaz à effet de serre.</p>
+               </div>
+        </div>
+        <button class="rounded-md border border-green-300 p-2 relative left-3/4 mt-8 animate-bounce">Voir Plus</button>
+        </div>
+    </nav>
+      <!-- FOOTER CODE BOOSTRAP  -->
+
+  <footer class="">
+    <div class="container">
+      <div class="flex space-x-10 justify-between row">
+        <div class="col colonne1 ">
+          <div class="contenu">
+            <div>
+              <a class="navbar-brand" href="#">
+                <img src="image/Sans titre-11 (3).png" alt="Logo" width="150" height="150" class="d-inline-block align-text-top">
+              </a>
+            </div>
+            <div style="text-align: center;">
+              <div><p>Suivez - nous !</p></div>
+              <div class="flex space-x-2">
+                <a href="#"><img src="image/facebook.png" alt="icon" width="30" height="30" class="d-inline-block align-text-top"></a>
+                <a href="#"><img src="image/instagram.png" alt="icon" width="30" height="30" class="d-inline-block align-text-top"></a>
+                <a href="#"><img src="image/linkedin.png" alt="icon" width="30" height="30" class="d-inline-block align-text-top"></a>
+                <a href="#"><img src="image/twitter.png" alt="icon" width="30" height="30" class="d-inline-block align-text-top"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col colonne2 space-y-5 space-x-5">
+          <h3>Accès rapide</h3>
+          <div>
+            <ul class="navbar-nav foot space-y-5">
+              <li class="ongletsfooter"><a class="nav-link lien" href="#">Accueil</a></li>
+              <li class="ongletsfooter"><a class="nav-link lien" href="#">Services</a></li>
+              <li class="ongletsfooter"><a class="nav-link lien" href="#">Contact</a></li>
+              <li class="ongletsfooter"><a class="nav-link lien" href="#">A propos</a></li>
+          </ul>
+          </div>
+        </div>
+        <div class="col colonne3 space-y-5">
+          <h3>Coordonnés</h3>
+          <div>
+            <ul class="navbar-nav foot space-y-5">
+              <li class="ongletsfooter"><a class="nav-link lien" href="#">567 rue Maréchal Joffre, Akwa , Douala </a></li>
+              <li class="ongletsfooter"><a class="nav-link lien" href="#">+237 698 819 573</a></li>
+              <li class="ongletsfooter"><a class="nav-link lien" href="#">support@greentechsolutions.com</a></li>
+              <li class="ongletsfooter"><a class="nav-link lien" href="#">Du lundi au vendredi : 9h - 18h</a></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center mentions">
+      <div class="flex justify-between row mention foot">
+        <div class="col navbar-nav foot">
+          <span class="ongletsfooter"><a class="nav-link lien" href="#" style="text-align: left;">Conditions d’utilisation</a></span>
+        </div>
+        <div class="col navbar-nav foot">
+          <span class="ongletsfooter"><a class="nav-link lien" href="#">Politique de confidentialité</a></span>
+        </div>
+        <div class="col navbar-nav foot">
+          <span class="ongletsfooter"><a class="nav-link lien" href="#" style="text-align: right;">Mentions légales</a></span>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div style="text-align: center; padding-bottom: 5px;">
+      <p style="font-size: 12px;">© 2025 <span style="color: #5CA506;">GreenTech Solutions.</span> Tous droits réservés</p>
+    </div>
+  </footer>
+
+
+  <style>
+    .nav-link , .lien{
+        color: white;
+        text-decoration: none;
+    }
+    .nav-item :hover{
+        color: #5CA506;
+        text-decoration: underline;
+        scale: 1.2;
+    }
+    .ongletsfooter :hover{
+        color: #5CA506;
+        text-decoration: underline;
+        scale: 1.2;
+    }
+    .btn{
+        width: 120px;
+        height: 35px;
+        border-radius: 5px;
+    }
+    .connects , .inscrit :hover{
+        background-color: #5CA506;
+        color: white;
+        border: #5CA506;
+    }
+    .connect :hover{
+        border: 1px solid #5CA506;
+        background-color: white;
+        color: #5CA506;
+    }
+    .inscrits{
+        border: 1px solid #2C3E50;
+        background-color: white;
+        color: #2C3E50;
+        margin-left: 10px;
+    }
+    .onglet{
+        display: flex; 
+        justify-content: space-around;
+    }
+    ul li {
+        margin-left: 20px;
+    }
+     
+    .navbar{
+        z-index: 2; /* Le header reste en haut de la page */
+    }
+    
+    
+    .carousel-indicators{
+        z-index: 1;
+    }
+    footer , .colonne2 , .colonne3{
+        margin-top: 5%;
+    }
+    .section2 , .section4{
+        background-color: #ECF0F1;
+        padding: 50px 0;
+    }
+    
+    footer{
+        color: #fff;
+        background-color: #2C3E50;
+    }
+    .contenu{
+        text-align: left;
+    }
+    .mentions{
+        margin-top: 3%;
+    }
+    
+    .colonne1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    
+    @media screen and (max-width: 991px) { /* S'applique aux écrans < 992px (tablettes et mobiles) */
+        .navbar-collapse {
+            background-color: #fff; /* Fond sombre pour le menu mobile */
+            padding: 10px;
+            border-radius: 8px;
+            /* width: 150px; */
+        }
+    
+        .navbar-nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+    
+        .navbar-nav .nav-link {
+            color: black;
+            font-size: 18px;
+            padding: 10px;
+            /* width: 100%; */
+            text-align: center;
+        }
+        .foot .lien {
+            color: white;
+            font-size: 18px;
+            text-align: left;
+            /* padding: 10px; */
+            /* width: 100%; */
+            /* text-align: center; */
+        }
+    
+        .navbar-nav .nav-link:hover {
+            background-color: #5CA506;
+            color: #fff;
+            border-radius: 5px;
+        }
+    
+        .navbar-toggler {
+            border: none;
+        }
+    
+        /* Espacement et alignement des boutons */
+        .navbar-collapse .d-flex {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+            text-align: center;
+        }
+    
+        .navbar-collapse .btn {
+            /* width: 100%; */
+            max-width: 150px;
+        }
+    }
+    @media screen and (max-width: 1028px){
+        
+        footer {
+            color: #fff;
+        }
+    }
+    @media screen and (max-width: 600px){
+       
+        .mention{
+            display: flex;
+            flex-direction: column;
+            color: #fff;
+        }
+    }
+  </style>
+</body>
+</html>
